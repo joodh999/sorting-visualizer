@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: rgb(49, 47, 47);
+}
+
+.sortingalgo{
+    display: flex;
+}
+.h{
+    font-size: 1.5rem;
+}
+
+.sort{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.el{
+    background-color: rgb(46, 44, 44);
+    color: rgb(46, 44, 44);
+    width: 14px;
+    font-size: xx-small;
+    margin: 1px;
+}
+
+input{
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+
+@media only screen and (max-width: 550px) {
+   
+
+    header{
+        display: grid;
+        
+    }
+    .sortingalgo{
+        display: flex;
+    }
+  }
+
+
+

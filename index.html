@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <header>
+            <div class="h" style="margin-right: 5px;">Sortingvisualizer</div>
+            
+            <div class="sortingalgo">
+
+            <div v-on:click="bubblesort" class='sort'>Bubble</div>
+            <div v-on:click="insertionsort" class="sort">Insertion</div>
+            <div v-on:click="callmergesort" class="sort">Merge</div>
+            
+
+            </div>
+
+            <div v-on:click="newarr" class="sort">newarr</div>
+        </header>
+
+        <main>
+
+            <div v-for="i in arr">
+
+                <div class="el" :style="{ height: `${i}vh` }"> {{ i }}</div>
+            </div>
+        </main>
+
+        
+
+        Speed: <input v-model="speed">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
